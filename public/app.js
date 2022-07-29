@@ -48,7 +48,7 @@ const showWin = (x) => {
   fullscreen.style.opacity = 1;
   msg.innerHTML = `<span class="info">${x}</span><br>
    <button onclick='newGame()' class="btn">New Game</button>`;
-  msg.style.transform = "translate(-50%, 0%)";
+  msg.style.transform = "translate(-50%, 30%)";
   msg.style.opacity = 1;
   turnUpdate();
 };
@@ -82,7 +82,7 @@ grids.forEach((grid) => {
         grids[yArr[i]].style.color = "white";
         grids[zArr[i]].style.color = "white";
         // Win Alert
-        showWin(`${grids[xArr[i]].innerHTML} Wins!`);
+        showWin(`${grids[xArr[i]].innerHTML} Won!`);
         if (grids[xArr[i]].innerHTML == "X") {
           scoreX++;
           xScore.innerHTML = scoreX;
